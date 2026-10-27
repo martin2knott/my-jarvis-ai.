@@ -46,7 +46,7 @@ Safety:
 if "history" not in st.session_state:
     st.session_state.history = []
 
-if st.button("Start a new conversation"):
+if st.button("Start a new conversation", key="new_chat"):
     st.session_state.history = []
     st.rerun()
 
